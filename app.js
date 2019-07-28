@@ -91,6 +91,7 @@ app.use('/blog', blogRoutes);
 app.use(authRoutes);
 app.use('/user',userRoutes);
 app.use(errorController.get404);
+//console.log('X');
 
 mongoose
 .connect(MONGODB_URI)
